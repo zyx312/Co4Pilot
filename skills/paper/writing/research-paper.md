@@ -474,6 +474,199 @@ Section:
 
 ---
 
+## Backward Reasoning Logic Map
+
+> Adapted from Research-Paper-Writing-Skills (Chen Qifeng Lab, HKUST)
+
+Most writers draft papers front-to-back: introduction first, conclusion last. Expert writers do the opposite — they reason backward from the conclusion to build a tight narrative.
+
+### The Backward-Then-Forward Method
+
+**Step 1: Backward reasoning (answer these questions first)**
+
+1. What technical problem do we solve, and why is there no well-established solution?
+2. What are the contributions of our pipeline (a new task, a new metric, a new technical problem, or a new technique)?
+3. What are the benefits of our contributions — why can they solve this technical challenge, and what new insight do they bring?
+4. How do we use prior methods to lead readers to the challenge we solved and the new insight we offer?
+
+**Step 2: Forward story (write in this order)**
+
+1. Introduce the paper's task and application context.
+2. Use prior methods to lead the reader to the technical challenge you solve.
+3. Present your contributions that address the challenge.
+4. Explain the technical advantages and explicitly express your new insight.
+
+### Logic Map (Introduction Structure)
+
+```
+What task are we solving?
+  → Which metrics should this task improve?
+    → SOTA methods fail to meet target metrics
+      → Root technical issue behind this failure
+        → Our technical solution and method pipeline
+          → Why the solution works
+            → Additional technical contributions
+```
+
+This maps to five parts in the introduction:
+1. **Part 1:** Task, applications, and target metrics
+2. **Part 2:** SOTA methods, their failure, and the root issue
+3. **Part 3:** Proposed solution and why it works
+4. **Part 4:** Additional contributions and impact
+5. **Part 5:** Experimental evidence
+
+### Key Warning
+
+Do NOT present a naive solution first and then describe your improvement over it. This writing pattern makes the work look like a low-score incremental patch, even if it is not. Instead, build reader curiosity about the unsolved challenge, then introduce your insight as the resolution.
+
+---
+
+## Method Three-Element Framework
+
+> Adapted from Research-Paper-Writing-Skills (Chen Qifeng Lab, HKUST)
+
+Every module in your method pipeline should be described through three elements:
+
+### Element 1: Module Design
+
+1. Describe the representation, network architecture, or data structure.
+2. Describe the forward process clearly: given input -> step 1 -> step 2 -> step 3 -> output.
+
+**Sentence skeletons:**
+- "We represent ... with ..."
+- "Given [input], we first ... then ... finally ..."
+- "This produces [output], which is used for ..."
+
+### Element 2: Module Motivation
+
+1. Explain why this module is needed.
+2. Use problem-driven logic: because problem X exists, we design module Y.
+
+**Opening sentences:**
+- "A remaining problem/challenge is ..."
+- "However, existing approaches ..."
+- "Previous methods have difficulty in ..."
+
+### Element 3: Technical Advantages
+
+1. Explain why this module has technical advantage over alternatives.
+2. Tie the advantage to measurable behavior when possible.
+
+**Sentence skeletons:**
+- "Compared with previous methods, this design ... because ..."
+- "In contrast to [alternative], our approach enables ..."
+
+### Pre-Writing Checklist for Method
+
+Before writing, answer for each module:
+1. How does the module run? (design)
+2. Why do we need this module? (motivation)
+3. Why does this module work better than alternatives? (advantage)
+
+### Method Writing Workflow
+
+```
+1. Draw the pipeline figure sketch
+2. Use the sketch to organize subsection structure
+3. For each subsection, plan: motivation → module design → technical advantages
+4. Write module design first (builds concrete backbone)
+5. Add motivation and advantages afterward
+```
+
+### Clarity Check (Three Levels)
+
+- **Logic level:** Summarize the Method writing logic after finishing. Is it smooth?
+- **Paragraph level:** Does the first sentence of each paragraph tell the reader what it is about? Does each paragraph deliver exactly one message?
+- **Sentence level:** Is the motivation of each sentence explicit? Is sentence-to-sentence flow smooth? Are key terms consistent (no back-and-forth naming)?
+
+---
+
+## Introduction Template Patterns
+
+> Adapted from Research-Paper-Writing-Skills (Chen Qifeng Lab, HKUST)
+
+### Part A: How to Open — Four Versions
+
+**Version 1 (Niche task):** Define the task first, then introduce applications.
+- "[Task] targets at recovering/estimating [output] from [input]."
+- "[Task] has applications such as [A], [B], and [C]."
+
+**Version 2 (Familiar task):** Skip task definition, open with application importance.
+- "[Task] has wide applications in [A], [B], and [C]."
+
+**Version 3 (New setting, recommended):** Introduce the general task, then narrow to your specific setting.
+- "[General task] has applications in [A], [B], [C]."
+- "This paper focuses on the specific setting of [output] from [input]."
+
+**Version 4 (Familiar task, advanced):** Open with application importance and immediately expose the target challenge via previous methods' failure cases.
+- "[Application importance]. Given input ..., previous methods usually ... Although they work in many cases, they fail at ... because ..."
+
+### Part B: How to Present the Technical Challenge
+
+**For existing tasks with existing methods:**
+- General challenge -> traditional methods (limitation) -> recent methods (limitation + technical reason) -> the remaining challenge your method solves.
+
+**For novel tasks without direct prior methods:**
+- State the goal, explain the problem is challenging for N reasons, use "First/Second/Finally" to separate independent challenge points.
+
+### Part C: How to Present Your Pipeline — Four Versions
+
+**Pipeline V1:** One contribution with multiple advantages, plus teaser figure.
+
+**Pipeline V2:** Two contributions, using teaser figure. Contribution 1 -> remaining challenge -> contribution 2 as response.
+
+**Pipeline V3:** Build on a prior pipeline, introduce one new module as key innovation. Start from prior setup, show observation that motivates design, explain mechanism, compare against alternatives.
+
+**Pipeline V4:** Contribution comes from one important observation. State innovation first, then observation as motivation, then implementation, then advantages.
+
+---
+
+## Figure Design Principles
+
+> Adapted from Research-Paper-Writing-Skills (Chen Qifeng Lab, HKUST) and best practices from top venues
+
+### Pipeline/Architecture Figures
+
+1. **Draw the pipeline figure first** — it is the skeleton of your Method section. Each box in the figure becomes a subsection.
+2. Use the figure to organize your subsection structure before writing any text.
+3. Point to the figure early: "The basic idea is illustrated in Figure 1."
+4. If the pipeline/framework is novel, dedicate an overview figure. If it follows a standard pipeline with one new module, a focused module figure may suffice.
+
+### Table Design Rules
+
+1. Put caption **above** the table.
+2. Avoid vertical lines (`|`) in columns.
+3. Use `booktabs` style (`\toprule`, `\midrule`, `\bottomrule`) for clean structure.
+4. Use as few horizontal rules as possible — lines separate groups, not every row.
+5. Label metric direction in column headers (e.g., `PSNR ↑`, `LPIPS ↓`).
+6. Add units so values are interpretable without guessing.
+7. Align text columns left; keep numeric columns consistently aligned.
+8. Keep numeric precision consistent within a metric column.
+9. One table, one message — do not mix unrelated results.
+10. Highlight key numbers (best/second-best) with subtle color emphasis.
+
+### Qualitative Figure Design
+
+1. Match qualitative results to ablation studies — for each important ablation, show a visual example.
+2. Include failure cases alongside successes. Reviewers trust honest papers.
+3. In two-column papers, prefer placing single-column figures in the right column so readers enter the page from left-top text without breaking flow.
+
+### Caption Writing
+
+1. Captions should be self-contained — a reader should understand the figure from its caption alone.
+2. For result figures, state the setting and protocol in the caption, not lengthy discussion.
+3. If a figure has a simple message, use one concise sentence.
+
+### Teaser Figure Strategy
+
+A teaser figure (Figure 1) should communicate the core idea at a glance:
+1. Show the problem (what fails in current methods).
+2. Show your solution (what your method achieves).
+3. Keep it visually clean — avoid clutter.
+4. This figure is often the first thing reviewers see. Make it count.
+
+---
+
 ## References
 
 - Simon Peyton Jones, "How to Write a Great Research Paper," Microsoft Research talk, 2016

@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code](https://img.shields.io/badge/Claude-Code-blueviolet)](https://claude.ai)
-[![Skills](https://img.shields.io/badge/Skills-43-green)](./skills/)
+[![Skills](https://img.shields.io/badge/Skills-53-green)](./skills/)
 
 ## What is Co4Pilot?
 
@@ -16,6 +16,7 @@
 | **📋 Project** | Proposals, execution, data management | 12 |
 | **📝 Paper** | Literature, writing, peer review, academic impact | 14 |
 | **💡 Patent** | Mining, disclosure, drafting, office actions | 4 |
+| **🔧 Domains** | Domain-specific extensions (AD Safety, ...) | 10 |
 
 Built on [Claude Code](https://claude.ai), each skill contains actionable frameworks, templates, checklists, and prompt templates — sourced from MIT, Stanford, Harvard, CMU and other top universities' best practices.
 
@@ -87,11 +88,44 @@ Co4Pilot/
 │       ├── patent-drafting            Claims, specification, PCT strategy
 │       └── office-action              US/CN/EP rejection responses
 │
+│   └── domains/                 🔧 Domain Extensions (10 skills)
+│       └── ad-safety/             AD Safety (Dr. Wang Cheng, RoboSafe-Lab)
+│           ├── ad-safety-research   Orchestrator for AD safety research
+│           ├── ad-scenario-analysis Scenario analysis, ODD, HARA, STPA
+│           ├── ad-standards-navigator ISO 26262, ISO 21448, UL 4600
+│           ├── ad-literature-review AD-specific venue search (IV, ITSC, T-ITS)
+│           ├── ad-paper-writing     AD safety paper conventions
+│           ├── ad-experiment-design CARLA, SUMO, CommonRoad experiments
+│           ├── ad-dataset-analysis  FARS, GIDAS, SHRP2, crash data
+│           ├── ad-behavior-modeling Trajectory prediction, interaction models
+│           ├── ad-foundation-models VLAs, E2E driving, LLM safety
+│           └── ad-generative-models World models, diffusion, 3DGS for AD
+│
 ├── agents/                        11 composite agents
 ├── workflows/                     5 end-to-end workflows
 ├── install.sh                     Append-only installation
 └── LICENSE                        MIT
 ```
+
+## Domain Extensions
+
+The 4P framework provides universal academic skills. **Domain extensions** layer discipline-specific expertise on top:
+
+| Domain | Skills | Contributor | Focus |
+|--------|--------|------------|-------|
+| **AD Safety** | 10 | [Dr. Wang Cheng](https://github.com/RoboSafe-Lab) (Northumbria University) | SOTIF, scenario testing, safety assurance, V&V, foundation models for AD |
+
+See [skills/domains/README.md](skills/domains/README.md) for the full list and contribution guide.
+
+### Contributing Domain Extensions
+
+Are you an expert in medical research, legal analysis, social science, materials science, or another field? You can contribute a domain extension:
+
+1. Create `skills/domains/your-domain/` with skill files following the Co4Pilot template
+2. Each skill should contain: overview, frameworks, templates, prompt templates, references
+3. Submit a PR — see [skills/domains/README.md](skills/domains/README.md) for details
+
+Your domain expertise + Co4Pilot's AI framework = powerful research tools for your entire field.
 
 ## Quick Start
 
@@ -123,7 +157,7 @@ Every skill file contains 200-500 lines of substantive content:
 - **Quality checklists** to catch common mistakes
 - **Tool recommendations** with specific setup guides
 
-Total: **43 skill files, 18,900+ lines of content.**
+Total: **53 skill files (43 core + 10 domain), 18,900+ lines of content.**
 
 ## Roadmap
 
@@ -134,9 +168,15 @@ Total: **43 skill files, 18,900+ lines of content.**
 - [ ] Phase 5: 5 end-to-end workflow automation
 - [ ] Phase 6: Community contributions
 
-## Inspired By
+## Inspired By & Credits
 
 This project was inspired by [automotive-claude-code-agents](https://github.com/theja0473/automotive-claude-code-agents) by Thejeswarareddy R (Bosch), which demonstrated how domain-specific knowledge can be systematically integrated into AI coding assistants.
+
+**Domain Extension Contributors:**
+- **Dr. Wang Cheng** ([RoboSafe-Lab](https://github.com/RoboSafe-Lab), Northumbria University) — AD Safety domain extension (10 skills covering SOTIF, scenario analysis, standards navigation, behavior modeling, foundation models, generative models, and more). A collaborator of Prof. Zhang Yuxin on autonomous driving safety research.
+
+**Paper Writing Enhancement Sources:**
+- [Research-Paper-Writing-Skills](https://github.com/Chen-Qifeng/Research-Paper-Writing-Skills) (Chen Qifeng Lab, HKUST) — Backward reasoning logic map, method three-element framework, introduction template patterns, figure design principles.
 
 ## Contributing
 
