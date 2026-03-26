@@ -6,7 +6,7 @@ Co4Pilot's 4P framework (People/Project/Paper/Patent) provides universal academi
 
 | Domain | Skills | Contributor | Description |
 |--------|--------|------------|-------------|
-| **AD Safety** | 10 | [Dr. Wang Cheng](https://github.com/RoboSafe-Lab) (Northumbria University) | Autonomous driving safety research: SOTIF, scenario-based testing, safety assurance, V&V |
+| **AD Safety** | 10 | [Dr. Wang Cheng](https://github.com/RoboSafe-Lab) | Autonomous driving safety research: SOTIF, scenario-based testing, safety assurance, V&V |
 
 ## How to Contribute a Domain Extension
 
