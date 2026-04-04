@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Co4Pilot — AI-Powered Academic Research Copilot</title>
+  <meta name="description" content="AI-powered copilot for the 4Ps of academic life: People, Project, Paper, Patent. 45 core skills + 10 domain skills built on Claude Code.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- Language Toggle -->
+<button class="lang-toggle" onclick="toggleLang()">
+  <span class="cn">EN</span>
+  <span class="en">中文</span>
+</button>
+
+<!-- Hero -->
+<header class="hero container">
+  <h1>Co4Pilot</h1>
+  <p class="tagline cn-block">AI驱动的学术科研全生命周期助手</p>
+  <p class="tagline en-block">AI-Powered Copilot for the Academic Research Lifecycle</p>
+  <p class="tagline" style="margin-top: 8px;">
+    <span class="cn">覆盖学术生涯四大支柱</span><span class="en">Covering the four pillars of academic life</span>:
+    <strong>People</strong> &middot; <strong>Project</strong> &middot; <strong>Paper</strong> &middot; <strong>Patent</strong>
+  </p>
+  <div class="hero-buttons">
+    <a href="https://github.com/AutoZYX/Co4Pilot" class="btn" target="_blank" rel="noopener">
+      <span class="cn">GitHub 仓库</span><span class="en">GitHub Repo</span>
+    </a>
+    <a href="https://github.com/AutoZYX/Co4Pilot#quick-start" class="btn btn-outline" target="_blank" rel="noopener">
+      <span class="cn">快速开始</span><span class="en">Get Started</span>
+    </a>
+  </div>
+</header>
+
+<!-- Stats Bar -->
+<div class="stats container">
+  <div class="stat">
+    <span class="stat-number">45</span>
+    <span class="stat-label">
+      <span class="cn">核心技能</span><span class="en">Core Skills</span>
+    </span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">10</span>
+    <span class="stat-label">
+      <span class="cn">领域技能</span><span class="en">Domain Skills</span>
+    </span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">4</span>
+    <span class="stat-label">
+      <span class="cn">核心支柱</span><span class="en">Pillars</span>
+    </span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">9</span>
+    <span class="stat-label">
+      <span class="cn">复合智能体</span><span class="en">Agents</span>
+    </span>
+  </div>
+</div>
+
+<!-- 4P Framework -->
+<section>
+  <div class="container">
+    <h2 class="section-title">
+      <span class="cn">4P 框架</span><span class="en">The 4P Framework</span>
+    </h2>
+    <div class="pillars">
+
+      <!-- People -->
+      <div class="pillar-card">
+        <span class="pillar-icon">&#x1F393;</span>
+        <h3>People</h3>
+        <span class="pillar-count">13 skills</span>
+        <p class="cn-block">团队与人才: 学生指导、课程设计、职业发展、团队管理</p>
+        <p class="en-block">People &amp; Talent: Student mentoring, course design, career, team management</p>
+        <table class="skill-table">
+          <thead>
+            <tr>
+              <th><span class="cn">类别</span><span class="en">Category</span></th>
+              <th><span class="cn">数量</span><span class="en">Count</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="category-cell">Mentoring</td>
+              <td class="count-cell">5</td>
+            </tr>
+            <tr>
+              <td class="category-cell">Teaching</td>
+              <td class="count-cell">4</td>
+            </tr>
+            <tr>
+              <td class="category-cell">Career</td>
+              <td class="count-cell">3</td>
+            </tr>
+            <tr>
+              <td class="category-cell">Team Management</td>
+              <td class="count-cell">1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Project -->
+      <div class="pillar-card">
+        <span class="pillar-icon">&#x1F4CB;</span>
+        <h3>Project</h3>
+        <span class="pillar-count">12 skills</span>
+        <p class="cn-block">项目管理: 基金申请、项目执行、预算管理、数据管理</p>
+        <p class="en-block">Project Management: Grant writing, execution, budgets, research data</p>
+        <table class="skill-table">
+          <thead>
+            <tr>
+              <th><span class="cn">类别</span><span class="en">Category</span></th>
+              <th><span class="cn">数量</span><span class="en">Count</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="category-cell">Proposal</td>
+              <td class="count-cell">4</td>
+            </tr>
+            <tr>
+              <td class="category-cell">Execution</td>
+              <td class="count-cell">4</td>
+            </tr>
+            <tr>
+              <td class="category-cell">Data Management</td>
+              <td class="count-cell">4</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Paper -->
+      <div class="pillar-card">
+        <span class="pillar-icon">&#x1F4DD;</span>
+        <h3>Paper</h3>
+        <span class="pillar-count">16 skills</span>
+        <p class="cn-block">论文写作: 文献检索、论文撰写、同行评审、学术传播</p>
+        <p class="en-block">Paper Writing: Literature search, composition, peer review, dissemination</p>
+        <table class="skill-table">
+          <thead>
+            <tr>
+              <th><span class="cn">类别</span><span class="en">Category</span></th>
+              <th><span class="cn">数量</span><span class="en">Count</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="category-cell">Literature</td>
+              <td class="count-cell">4</td>
+            </tr>
+            <tr>
+              <td class="category-cell">Writing</td>
+              <td class="count-cell">6</td>
+            </tr>
+            <tr>
+              <td class="category-cell">Review</td>
+              <td class="count-cell">2</td>
+            </tr>
+            <tr>
+              <td class="category-cell">Impact</td>
+              <td class="count-cell">4</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Patent -->
+      <div class="pillar-card">
+        <span class="pillar-icon">&#x1F512;</span>
+        <h3>Patent</h3>
+        <span class="pillar-count">4 skills</span>
+        <p class="cn-block">专利保护: 专利挖掘、披露、撰写、答复</p>
+        <p class="en-block">Patent Protection: Mining, disclosure, drafting, office actions</p>
+        <table class="skill-table">
+          <thead>
+            <tr>
+              <th><span class="cn">类别</span><span class="en">Category</span></th>
+              <th><span class="cn">数量</span><span class="en">Count</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="category-cell">Patent Mining</td>
+              <td class="count-cell">1</td>
+            </tr>
+            <tr>
+              <td class="category-cell">Disclosure</td>
+              <td class="count-cell">1</td>
+            </tr>
+            <tr>
+              <td class="category-cell">Drafting</td>
+              <td class="count-cell">1</td>
+            </tr>
+            <tr>
+              <td class="category-cell">Office Action</td>
+              <td class="count-cell">1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Domain Extensions -->
+<section>
+  <div class="container">
+    <h2 class="section-title">
+      <span class="cn">领域扩展</span><span class="en">Domain Extensions</span>
+    </h2>
+    <p class="cn-block" style="margin-bottom: 16px;">4P框架提供通用学术技能, 领域扩展在此基础上叠加学科专业知识。</p>
+    <p class="en-block" style="margin-bottom: 16px;">The 4P framework provides universal academic skills. Domain extensions layer discipline-specific expertise on top.</p>
+    <div class="domain-card">
+      <h3>
+        AD Safety
+        <span class="badge accent">10 skills</span>
+      </h3>
+      <p>
+        <span class="cn">
+          贡献者: <a href="https://github.com/RoboSafe-Lab" target="_blank" rel="noopener">Dr. Cheng Wang</a> (Northumbria University)
+        </span>
+        <span class="en">
+          Contributor: <a href="https://github.com/RoboSafe-Lab" target="_blank" rel="noopener">Dr. Cheng Wang</a> (Northumbria University)
+        </span>
+      </p>
+      <p>
+        <span class="cn">覆盖 SOTIF、场景测试、安全保障、V&amp;V、自动驾驶基础模型</span>
+        <span class="en">SOTIF, scenario testing, safety assurance, V&amp;V, foundation models for AD</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Architecture -->
+<section>
+  <div class="container">
+    <h2 class="section-title">
+      <span class="cn">项目结构</span><span class="en">Architecture</span>
+    </h2>
+    <div class="code-block"><code>Co4Pilot
+|
++-- <span class="dir">skills/</span>
+|   +-- <span class="dir">people/</span>                       <span class="comment">People (13 skills)</span>
+|   |   +-- <span class="dir">mentoring/</span>                  <span class="comment">Student supervision</span>
+|   |   |   +-- <span class="file">undergrad-thesis</span>          <span class="comment">28-week undergraduate thesis guide</span>
+|   |   |   +-- <span class="file">master-program</span>            <span class="comment">2-3 year master's roadmap</span>
+|   |   |   +-- <span class="file">phd-program</span>               <span class="comment">4-5 year PhD lifecycle</span>
+|   |   |   +-- <span class="file">research-direction</span>        <span class="comment">Gap identification, feasibility matrix</span>
+|   |   |   +-- <span class="file">progress-tracking</span>         <span class="comment">Milestone tables, early warning</span>
+|   |   +-- <span class="dir">teaching/</span>                   <span class="comment">Course design &amp; delivery (4)</span>
+|   |   +-- <span class="dir">career/</span>                     <span class="comment">Academic career development (3)</span>
+|   |   +-- <span class="file">team-management</span>             <span class="comment">Lab culture, roles, conflict</span>
+|   |
+|   +-- <span class="dir">project/</span>                      <span class="comment">Project (12 skills)</span>
+|   |   +-- <span class="dir">proposal/</span>                    <span class="comment">Grant &amp; project proposals (4)</span>
+|   |   +-- <span class="dir">execution/</span>                   <span class="comment">Project management (4)</span>
+|   |   +-- <span class="dir">data/</span>                        <span class="comment">Research data management (4)</span>
+|   |
+|   +-- <span class="dir">paper/</span>                        <span class="comment">Paper (16 skills)</span>
+|   |   +-- <span class="dir">literature/</span>                  <span class="comment">Literature research (4)</span>
+|   |   +-- <span class="dir">writing/</span>                     <span class="comment">Paper composition (6)</span>
+|   |   +-- <span class="dir">review/</span>                      <span class="comment">Peer review (2)</span>
+|   |   +-- <span class="dir">impact/</span>                      <span class="comment">Academic dissemination (4)</span>
+|   |
+|   +-- <span class="dir">patent/</span>                       <span class="comment">Patent (4 skills)</span>
+|   |   +-- <span class="file">patent-mining</span>                 <span class="comment">5 mining methods, portfolio</span>
+|   |   +-- <span class="file">disclosure</span>                    <span class="comment">Timing rules, TTO process</span>
+|   |   +-- <span class="file">patent-drafting</span>               <span class="comment">Claims, specification, PCT</span>
+|   |   +-- <span class="file">office-action</span>                 <span class="comment">US/CN/EP rejection responses</span>
+|   |
+|   +-- <span class="dir">domains/</span>                      <span class="comment">Domain Extensions</span>
+|       +-- <span class="dir">ad-safety/</span>                    <span class="comment">AD Safety (10 skills)</span>
+|
++-- <span class="dir">agents/</span>                           <span class="comment">9 composite agents</span>
++-- <span class="dir">workflows/</span>                        <span class="comment">5 end-to-end workflows</span>
++-- <span class="file">install.sh</span>                        <span class="comment">Append-only installation</span>
++-- <span class="file">LICENSE</span></code></div>
+  </div>
+</section>
+
+<!-- Quick Start -->
+<section>
+  <div class="container">
+    <h2 class="section-title">
+      <span class="cn">快速开始</span><span class="en">Quick Start</span>
+    </h2>
+    <div class="code-block"><code><span class="comment"># Clone the repository</span>
+git clone https://github.com/AutoZYX/Co4Pilot.git
+cd Co4Pilot
+./install.sh</code></div>
+    <p style="margin-top: 16px; color: var(--muted); font-size: 0.95rem;">
+      <span class="cn">安装过程采用追加模式, 不会影响现有开发环境。卸载:</span>
+      <span class="en">Append-only installation -- your existing dev environment stays untouched. To uninstall:</span>
+      <code style="background: var(--badge-bg); padding: 2px 8px; border-radius: 4px; font-size: 0.88rem;">./install.sh --uninstall</code>
+    </p>
+  </div>
+</section>
+
+<!-- About -->
+<section>
+  <div class="container">
+    <h2 class="section-title">
+      <span class="cn">关于</span><span class="en">About</span>
+    </h2>
+    <div class="about-text">
+      <p class="cn-block">
+        <strong>Co4Pilot</strong> 由 <a href="https://www.linkedin.com/in/yuxin-zhang-autozyx/" target="_blank" rel="noopener">张玉新</a> 创建, 他是吉林大学汽车工程学院副教授, 研究方向为自动驾驶安全、SOTIF与场景驱动测试。
+        每个技能文件包含200-500行实质性内容, 框架和模板来源于 MIT、Stanford、Harvard、CMU、Oxford 等顶级大学的最佳实践。
+      </p>
+      <p class="en-block">
+        <strong>Co4Pilot</strong> was created by <a href="https://www.linkedin.com/in/yuxin-zhang-autozyx/" target="_blank" rel="noopener">Yuxin Zhang</a>, Associate Professor at Jilin University, School of Automotive Engineering. Research: autonomous driving safety, SOTIF, scenario-based testing.
+        Every skill file contains 200-500 lines of substantive content with frameworks and templates sourced from MIT, Stanford, Harvard, CMU, Oxford, and other top universities.
+      </p>
+      <p>
+        <span class="cn">灵感来源于</span><span class="en">Inspired by</span>
+        <a href="https://github.com/theja0473/automotive-claude-code-agents" target="_blank" rel="noopener">automotive-claude-code-agents</a>
+        <span class="cn">(Thejeswarareddy R, Bosch), 该项目展示了如何将领域专业知识系统化地集成到 AI 编程助手中。</span>
+        <span class="en"> by Thejeswarareddy R (Bosch), which demonstrated how domain-specific knowledge can be systematically integrated into AI coding assistants.</span>
+      </p>
+      <p style="margin-top: 12px;">
+        <a href="https://autozyx.com" class="link-item" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          autozyx.com
+        </a>
+        <a href="https://www.linkedin.com/in/yuxin-zhang-autozyx/" class="link-item" target="_blank" rel="noopener" style="margin-left: 8px;">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>&copy; 2026 Yuxin Zhang &nbsp;|&nbsp; Apache 2.0</p>
+    <p style="margin-top: 6px;">
+      <a href="https://github.com/AutoZYX/Co4Pilot" target="_blank" rel="noopener">GitHub</a>
+      &nbsp;&middot;&nbsp;
+      <a href="https://autozyx.com" target="_blank" rel="noopener">autozyx.com</a>
+    </p>
+  </div>
+</footer>
+
+<!-- Language Toggle Script -->
+<script>
+(function() {
+  var KEY = 'c4plang';
+  var saved = localStorage.getItem(KEY);
+  if (saved === 'en') {
+    document.body.classList.add('E');
+  }
+})();
+
+function toggleLang() {
+  var KEY = 'c4plang';
+  document.body.classList.toggle('E');
+  var isEn = document.body.classList.contains('E');
+  localStorage.setItem(KEY, isEn ? 'en' : 'cn');
+}
+</script>
+
+</body>
+</html>
