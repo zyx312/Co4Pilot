@@ -8,7 +8,7 @@ metadata:
   tags: ["autonomous-driving", "scenario-analysis", "safety", "ODD", "SOTIF", "hazard-analysis"]
 ---
 
-> Contributed by Dr. Wang Cheng (RoboSafe-Lab, Northumbria University)
+> Contributed by Dr. Wang Cheng (RoboSafe-Lab, Heriot-Watt University)
 
 
 # AD Scenario Analysis

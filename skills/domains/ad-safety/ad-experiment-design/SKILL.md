@@ -8,7 +8,7 @@ metadata:
   tags: ["autonomous-driving", "experiment-design", "simulation", "testing", "benchmarks"]
 ---
 
-> Contributed by Dr. Wang Cheng (RoboSafe-Lab, Northumbria University)
+> Contributed by Dr. Wang Cheng (RoboSafe-Lab, Heriot-Watt University)
 
 
 # AD Experiment Design

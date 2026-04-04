@@ -18,9 +18,9 @@
 <!-- Hero -->
 <header class="hero container">
   <h1>Co4Pilot</h1>
-  <p class="tagline cn-block">AI驱动的学术科研全生命周期助手</p>
-  <p class="tagline en-block">AI-Powered Copilot for the Academic Research Lifecycle</p>
-  <p class="tagline" style="margin-top: 8px;">
+  <p class="tagline cn-block" style="font-size:clamp(1.4rem,1.2rem+0.6vw,2rem); font-weight:600;">AI驱动的学术科研全生命周期助手</p>
+  <p class="tagline en-block" style="font-size:clamp(1.4rem,1.2rem+0.6vw,2rem); font-weight:600;">AI-Powered Copilot for the Academic Research Lifecycle</p>
+  <p class="tagline" style="margin-top:12px; font-size:clamp(1.2rem,1rem+0.5vw,1.6rem); font-weight:500;">
     <span class="cn">覆盖学术生涯四大支柱</span><span class="en">Covering the four pillars of academic life</span>:
     <strong>People</strong> &middot; <strong>Project</strong> &middot; <strong>Paper</strong> &middot; <strong>Patent</strong>
   </p>
@@ -225,10 +225,10 @@
       </h3>
       <p>
         <span class="cn">
-          贡献者: <a href="https://github.com/RoboSafe-Lab" target="_blank" rel="noopener">Dr. Cheng Wang</a> (Northumbria University)
+          贡献者: <a href="https://github.com/RoboSafe-Lab" target="_blank" rel="noopener">Dr. Cheng Wang</a> (Heriot-Watt University)
         </span>
         <span class="en">
-          Contributor: <a href="https://github.com/RoboSafe-Lab" target="_blank" rel="noopener">Dr. Cheng Wang</a> (Northumbria University)
+          Contributor: <a href="https://github.com/RoboSafe-Lab" target="_blank" rel="noopener">Dr. Cheng Wang</a> (Heriot-Watt University)
         </span>
       </p>
       <p>
@@ -245,7 +245,7 @@
     <h2 class="section-title">
       <span class="cn">项目结构</span><span class="en">Architecture</span>
     </h2>
-    <div class="code-block"><code>Co4Pilot
+    <div class="code-block"><pre><code>Co4Pilot
 |
 +-- <span class="dir">skills/</span>
 |   +-- <span class="dir">people/</span>                       <span class="comment">People (13 skills)</span>
@@ -282,7 +282,7 @@
 +-- <span class="dir">agents/</span>                           <span class="comment">9 composite agents</span>
 +-- <span class="dir">workflows/</span>                        <span class="comment">5 end-to-end workflows</span>
 +-- <span class="file">install.sh</span>                        <span class="comment">Append-only installation</span>
-+-- <span class="file">LICENSE</span></code></div>
++-- <span class="file">LICENSE</span></code></pre></div>
   </div>
 </section>
 
@@ -292,10 +292,10 @@
     <h2 class="section-title">
       <span class="cn">快速开始</span><span class="en">Quick Start</span>
     </h2>
-    <div class="code-block"><code><span class="comment"># Clone the repository</span>
+    <div class="code-block"><pre><code><span class="comment"># Clone the repository</span>
 git clone https://github.com/AutoZYX/Co4Pilot.git
 cd Co4Pilot
-./install.sh</code></div>
+./install.sh</code></pre></div>
     <p style="margin-top: 16px; color: var(--muted); font-size: 0.95rem;">
       <span class="cn">安装过程采用追加模式, 不会影响现有开发环境。卸载:</span>
       <span class="en">Append-only installation -- your existing dev environment stays untouched. To uninstall:</span>

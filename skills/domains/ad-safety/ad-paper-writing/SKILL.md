@@ -8,7 +8,7 @@ metadata:
   tags: ["autonomous-driving", "paper-writing", "safety", "academic"]
 ---
 
-> Contributed by Dr. Wang Cheng (RoboSafe-Lab, Northumbria University)
+> Contributed by Dr. Wang Cheng (RoboSafe-Lab, Heriot-Watt University)
 
 
 # AD Safety Paper Writing

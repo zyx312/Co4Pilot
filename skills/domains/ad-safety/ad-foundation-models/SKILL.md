@@ -8,7 +8,7 @@ metadata:
   tags: ["autonomous-driving", "VLA", "foundation-models", "end-to-end", "LLM", "VLM", "safety"]
 ---
 
-> Contributed by Dr. Wang Cheng (RoboSafe-Lab, Northumbria University)
+> Contributed by Dr. Wang Cheng (RoboSafe-Lab, Heriot-Watt University)
 
 
 # AD Foundation Models

@@ -8,7 +8,7 @@ metadata:
   tags: ["autonomous-driving", "standards", "ISO-26262", "SOTIF", "regulations", "functional-safety"]
 ---
 
-> Contributed by Dr. Wang Cheng (RoboSafe-Lab, Northumbria University)
+> Contributed by Dr. Wang Cheng (RoboSafe-Lab, Heriot-Watt University)
 
 
 # AD Standards Navigator

@@ -8,7 +8,7 @@ metadata:
   tags: ["autonomous-driving", "generative-models", "world-models", "diffusion", "3DGS", "flow-matching", "simulation"]
 ---
 
-> Contributed by Dr. Wang Cheng (RoboSafe-Lab, Northumbria University)
+> Contributed by Dr. Wang Cheng (RoboSafe-Lab, Heriot-Watt University)
 
 
 # AD Generative Models

@@ -8,7 +8,7 @@ metadata:
   tags: ["autonomous-driving", "literature-review", "safety", "survey"]
 ---
 
-> Contributed by Dr. Wang Cheng (RoboSafe-Lab, Northumbria University)
+> Contributed by Dr. Wang Cheng (RoboSafe-Lab, Heriot-Watt University)
 
 
 # AD Safety Literature Review

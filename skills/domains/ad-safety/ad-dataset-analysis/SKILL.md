@@ -8,7 +8,7 @@ metadata:
   tags: ["autonomous-driving", "crash-data", "safety-metrics", "naturalistic-driving", "data-analysis"]
 ---
 
-> Contributed by Dr. Wang Cheng (RoboSafe-Lab, Northumbria University)
+> Contributed by Dr. Wang Cheng (RoboSafe-Lab, Heriot-Watt University)
 
 
 # AD Dataset Analysis

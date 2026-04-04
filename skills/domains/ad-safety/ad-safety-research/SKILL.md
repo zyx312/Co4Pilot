@@ -8,7 +8,7 @@ metadata:
   tags: ["autonomous-driving", "safety", "research", "orchestration"]
 ---
 
-> Contributed by Dr. Wang Cheng (RoboSafe-Lab, Northumbria University)
+> Contributed by Dr. Wang Cheng (RoboSafe-Lab, Heriot-Watt University)
 
 
 # Autonomous Driving Safety Research Orchestrator

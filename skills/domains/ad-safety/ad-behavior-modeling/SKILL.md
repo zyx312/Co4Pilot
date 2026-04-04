@@ -8,7 +8,7 @@ metadata:
   tags: ["autonomous-driving", "behavior-modeling", "trajectory-prediction", "interaction", "game-theory", "motion-forecasting"]
 ---
 
-> Contributed by Dr. Wang Cheng (RoboSafe-Lab, Northumbria University)
+> Contributed by Dr. Wang Cheng (RoboSafe-Lab, Heriot-Watt University)
 
 
 # AD Behavior Modeling
