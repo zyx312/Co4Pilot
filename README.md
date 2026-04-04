@@ -6,6 +6,8 @@
 [![Claude Code](https://img.shields.io/badge/Claude-Code-blueviolet)](https://claude.ai)
 [![Skills](https://img.shields.io/badge/Core_Skills-45-green)](./skills/)
 
+**🌐 Website | 在线浏览：** [autozyx.github.io/Co4Pilot](https://autozyx.github.io/Co4Pilot)
+
 ## What is Co4Pilot?
 
 **Co4Pilot** is an AI-powered copilot that covers the complete academic research lifecycle through four pillars -- the **4P Framework**. Built on [Claude Code](https://claude.ai), it provides 45 actionable skill files with frameworks, templates, checklists, and prompt templates sourced from MIT, Stanford, Harvard, CMU, and other top universities' best practices.
@@ -121,7 +123,7 @@ Are you an expert in medical research, legal analysis, social science, materials
 ## Quick Start
 
 ```bash
-git clone https://github.com/zyx312/Co4Pilot.git
+git clone https://github.com/AutoZYX/Co4Pilot.git
 cd Co4Pilot
 ./install.sh
 ```
@@ -173,7 +175,11 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). PRs welcome -- especially for:
 
 ## Author
 
-**Yuxin Zhang** -- Professor at Jilin University, School of Automotive Engineering. Research: autonomous driving safety, SOTIF, scenario-based testing.
+**[Yuxin Zhang (张玉新)](https://autozyx.com)** — Associate Professor at Jilin University, Chief Safety Expert at ZYT, Co-founder & CEO of DRIVEResearch. Research: autonomous driving safety, SOTIF, scenario-based testing.
+
+- **Website**: [autozyx.com](https://autozyx.com)
+- **LinkedIn**: [linkedin.com/in/zhangyuxin](https://www.linkedin.com/in/zhangyuxin/)
+- **Google Scholar**: [Scholar Profile](https://scholar.google.com.au/citations?user=W8YoarEAAAAJ&hl=en)
 
 ## License
 
